@@ -165,6 +165,7 @@ class GRPORunner:
         #########################
         # Log parameters
         #########################
+        training_args.vllm_gpu_memory_utilization = 0.88
         logger.debug(f"Model parameters {model_args}")
         logger.debug(f"Training/evaluation parameters {training_args}")
 
